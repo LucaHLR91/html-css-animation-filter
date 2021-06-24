@@ -122,29 +122,80 @@
 
 
 
-.ex-12-button:hover {
-    animation: movement 2s infinite;
+.ex-12-button:hover .ex-12-top-white {
+    animation: movement-top 1s linear alternate 2;
 }
 
-@keyframes movement {
-  
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: movement-bottom 1s linear alternate 2;
 }
 
 
+@keyframes movement-top {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
 
-
-
-
-.ex-13-top-white:hover, .ex-13-bottom-white:hover {
-    animation: o-rotate-360 1s linear infinite ;
+  100% {
+    top: -10px;
+    left: 60%;
+  }
 }
 
-@keyframes o-rotate-360 {
+@keyframes movement-bottom {
     0% {
-        transform: ;
+      bottom: -10px;
+      right: 20%;
     }
-
+  
     100% {
-        transform: rotate(360deg);
+      bottom: -10px;
+      right: 60%;
     }
+  }
+
+
+  .ex-13-button:hover .ex-13-top-white {
+    animation: movement-top-2 1s linear;
 }
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: movement-bottom-2 1s linear;
+}
+
+
+@keyframes movement-top-2 {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
+
+  25% {
+      top: -10;
+      left: 60%;
+  }
+
+  50% {
+      top: -10;
+      right: 20%;
+  }
+
+  100% {
+    top: -10px;
+    left: 10%;
+  }
+}
+
+@keyframes movement-bottom-2 {
+    0% {
+      bottom: -10px;
+      right: 20%;
+    }
+  
+    100% {
+      bottom: -10px;
+      right: 20%;
+    }
+  }
+
