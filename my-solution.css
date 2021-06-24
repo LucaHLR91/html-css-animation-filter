@@ -81,3 +81,70 @@
     width: 70%;
 }
 
+.ex-10-icon {
+    animation: rotation 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(360deg);
+    }
+
+}
+
+.ex-11-icon:hover {
+    animation: rotation-2 3s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotation-2 {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+}
+
+
+
+.ex-12-button:hover {
+    animation: movement 2s infinite;
+}
+
+@keyframes movement {
+  
+}
+
+
+
+
+
+
+.ex-13-top-white:hover, .ex-13-bottom-white:hover {
+    animation: o-rotate-360 1s linear infinite ;
+}
+
+@keyframes o-rotate-360 {
+    0% {
+        transform: ;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
